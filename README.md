@@ -77,3 +77,22 @@ Ce projet est une démonstration pédagogique. Les réservations ne sont pas env
 ## Auteur
 
 Projet réalisé dans le cadre d'une certification Flutter.
+
+
+## Captures d’écran
+
+### 1. Accueil
+
+![Accueil de Travel Explorer](screenshots/Home.png)
+
+### 2. Liste des destinations
+
+![Liste des destinations](screenshots/Destinations.png)
+
+### 3. Détails d’une destination
+
+![Détails d’une destination](screenshots/Details.png)
+
+### 4. Formulaire de réservation
+
+![Formulaire de réservation](screenshots/Booking.png)
