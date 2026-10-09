@@ -59,7 +59,11 @@ class _DestinationsScreenState extends State<DestinationsScreen> {
       ),
       body: LayoutBuilder(
         builder: (context, constraints) {
-          final isTablet = constraints.maxWidth >= 700;
+          final crossAxisCount = constraints.maxWidth >= 1100
+            ? 3
+            : constraints.maxWidth >= 650
+                ? 2
+                : 1;
 
           return Column(
             children: [
@@ -115,7 +119,7 @@ class _DestinationsScreenState extends State<DestinationsScreen> {
                         itemCount: filteredDestinations.length,
                         gridDelegate:
                             SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: isTablet ? 3 : 1,
+                          crossAxisCount: crossAxisCount,
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
                           mainAxisExtent: 280,
